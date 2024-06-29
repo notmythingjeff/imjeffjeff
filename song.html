@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGYO</title>
+    <link rel="stylesheet" href="song.css">
+    <link rel="icon" href="logo.jpg">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Songs</h1>
+        </div>
+        <div class="search-container">
+            <form action="#">
+                <input type="text" id="search" name="search" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+            <div id="searchResults"></div>
+        </div>
+        <button id="sidebarToggle" class="sidebar-toggle">☰</button>
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <button id="closeSidebar" class="close-sidebar">&times;</button>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="Profile.html">BGYO Profile</a></li>
+                <li><a href="Member.html">Members</a></li>
+                <li><a href="song.html">Songs</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="content">
+            <div class="video-player-container">
+                <iframe id="videoPlayer" width="560" height="315" src="https://www.youtube.com/embed/2EA-nTXU0Qc?si=5bZ9eCXSqSjAOA7V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="playlist">
+                <ul>
+                    <li><div class="Light"> <a href="#" onclick="changeVideoSource('https://www.youtube.com/embed/y2un_yj1IEU?si=E3bntaeuToVWHNYO')"autoplay>The Light</a></li>
+                    <li><a href="#" onclick="changeVideoSource('https://www.youtube.com/embed/cSW-BGxTrkI?si=qKQzt-3lHLLUFusd&amp;start=20')">Patintero</a></li>
+                    <li><a href="#" onclick="changeVideoSource('https://www.youtube.com/embed/2RGeLiC0oeg?si=M8jrvp9TYxXvrzgf&amp;start=20')">Tumitigil ang Mundo</a></li>
+                    <li><a href="#" onclick="changeVideoSource('https://www.youtube.com/embed/bQje1yJXGvg?si=VQWs_hCAZA4piRQV&amp;start=9')">Bulalakaw</a></li>
+                    <li><a href="#" onclick="changeVideoSource('https://www.youtube.com/embed/4guW7ZdvJrQ?si=C9T_PvwpKEEulOlu&amp;start=9')">Magnet</a></li>
+                    <li><a href="#" onclick="changeVideoSource('https://www.youtube.com/embed/zH87x_u5GcE?si=wzL_Ig0Mw-NUehyg&amp;start=9')">Kundiman</a></li>
+                    <li><a href="#" onclick="changeVideoSource('https://www.youtube.com/embed/9Qi6wCqSjwM?si=kMm40QAQvP88bNar&amp;start=9')">When I'm With You</a></li>
+                    <li><a href="#" onclick="changeVideoSource('https://www.youtube.com/embed/Th5Gh0ZfE2g?si=EYxD3-pFtdYCL_oZ&amp;start=9')">The Baddest</a></li>
+                    <li><a href="#" onclick="changeVideoSource('https://www.youtube.com/embed/2EA-nTXU0Qc?si=umjaQQtti3E4Sa6G&amp;start=9')">Gigil</a></li>
+                </ul>
+            </div>
+        </div>
+        <section id="marquee">
+            <div class="container">
+                <div class="pic-container">
+                    <div class="pic">
+                        <img src="marquee 01.png" alt="img">
+                    </div>
+                    <div class="pic">
+                        <img src="marquee 02.png" alt="img">
+                    </div>
+                    <div class="pic">
+                        <img src="marquee 03.png" alt="img">
+                    </div>
+                    <div class="pic">
+                        <img src="marquee 04.png" alt="img">
+                    </div>
+                    <div class="pic">
+                        <img src="marquee 05.png" alt="img">
+                    </div>
+                    <div class="pic">
+                        <img src="marquee 06.png" alt="img">
+                    </div>
+                    <div class="pic">
+                        <img src="marquee 07.png" alt="img">
+                    </div>
+                    <div class="pic">
+                        <img src="marquee 08.png" alt="img">
+                    </div>
+                    <div class="pic">
+                        <img src="marquee 09.png" alt="img">
+                    </div>
+                    <div class="pic">
+                        <img src="marquee 10.png    " alt="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <u><h1>Creator</h1></u>
+        <h2>"Jeffrick Untolan"<br>DIT 2</h2>
+        <p>No Copyright Infringement Intended<br>
+        &copy; Copyright 2024. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
